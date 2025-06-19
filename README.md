@@ -35,12 +35,15 @@ cmake --build .
 
 **Windows (Visual Studio 2022):**
 ```sh
-cmake -G "Visual Studio 17 2022" -A x64 -DCMAKE_TOOLCHAIN_FILE=C:/hw/vcpkg/scripts/buildsystems/vcpkg.cmake ..
+cmake -G "Visual Studio 17 2022" -A x64 -DCMAKE_TOOLCHAIN_FILE=../vcpkg/scripts/buildsystems/vcpkg.cmake ..
 cmake --build . --config Release
 ```
 
 ### 4. Запуск
 ```sh
-./build/Release/GameOfLife.exe (Windows)
-./build/GameOfLife.exe (Linux)
+# Windows
+./build/Release/GameOfLife.exe
+
+# Linux/macOS
+./build/GameOfLife
 ``` 
